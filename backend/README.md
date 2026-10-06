@@ -111,7 +111,7 @@ The frontend uses this URL to communicate with the backend.
 Start the backend server:
 
 ```bash
-npm run dev
+npm start
 ```
 
 Once the server starts successfully, the API will be available at:
