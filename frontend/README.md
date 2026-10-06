@@ -88,7 +88,7 @@ Make sure the backend server is running before using the application.
 ```bash
 cd Expense-Tracker/backend
 npm install
-npm run dev
+npm start
 ```
 
 ### Terminal 2 - Frontend
