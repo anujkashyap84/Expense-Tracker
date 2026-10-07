@@ -4,8 +4,10 @@ import { Mail, User, Lock, EyeOff, Eye } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const Login = ({ onLogin, API_URL = "http://localhost:4000" }) => {
-  const [email, setEmail] = useState("");
+const Login = ({ onLogin }) => {
+  const API_URL =
+    import.meta.env.VITE_API_URL || "http://localhost:4000";
+      const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
@@ -17,7 +19,7 @@ const Login = ({ onLogin, API_URL = "http://localhost:4000" }) => {
   const fetchProfile = async (token) => {
     if (!token) return null;
     const res = await axios.get(`${API_URL}/api/user/me`, {
-      headers: { Authorization: `Bearer %{token}` },
+      headers: { Authorization: `Bearer ${token}` },
     });
     return res.data;
   };
