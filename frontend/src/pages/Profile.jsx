@@ -6,8 +6,9 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import {toast, ToastContainer} from "react-toastify";
 
-const API_BASE = `${import.meta.env.VITE_API_URL || "http://localhost:4000"}/api`;
-
+const BASE_URL =
+  import.meta.env.VITE_API_URL || "http://localhost:4000";
+  
 Modal.setAppElement('#root');
 // Move PasswordInput component outside of ProfilePage to prevent recreation on every render
 const PasswordInput = memo(({ name, label, value, error, showField, onToggle, onChange, disabled }) => (
