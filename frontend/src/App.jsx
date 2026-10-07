@@ -12,7 +12,7 @@ import Dashboard from "./pages/Dashboard";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import axios from "axios";
-import Income from "./pages/income";
+import Income from "./pages/Income";
 import Expenses from "./pages/Expense";
 import Expense from "./pages/Expense";
 import Profile from "./pages/Profile";
