@@ -19,7 +19,7 @@ import Profile from "./pages/Profile";
 
 import Support from "./pages/Support";
 
-const API_URL = "http://localhost:4000";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000";
 
 // Get transactions from local storage
 const getTransactionsFromStorage = () => {
