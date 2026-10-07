@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 
 const Signup = ({
-  API_URL = "http://localhost:4000",
+  API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000",
   onSignup,
 }) => {
   const [name, setName] = useState("");
