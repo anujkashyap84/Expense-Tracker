@@ -139,7 +139,7 @@ A full-stack personal finance management web application that helps users manage
 
 ## 📁 Project Structure
 
-
+```text
 Expense-Tracker/
 │
 ├── backend/
@@ -166,10 +166,7 @@ Expense-Tracker/
 │
 ├── .gitignore
 └── README.md
-
-
----
-
+```
 ## ⚙️ Installation & Setup
 
 Follow these steps to run the project locally.
